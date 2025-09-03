@@ -10,7 +10,7 @@ n_numbers = st.number_input("How many numbers needed in password", min_value=1, 
 n_symbols = st.number_input("How many symbols needed in password", min_value=1, value=3)
 
 
-if st.button("Generate Passsord"):
+if st.button("Generate Password"):
     password = generate_password(n_letters,n_numbers,n_symbols)
     st.write(f"Your generated password is {password}")
         
